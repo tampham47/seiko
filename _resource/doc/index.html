@@ -1,0 +1,1437 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Seiko eCommerce HTML5 Template - Documentation</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel='stylesheet' href='css/bootstrap.min.css'>
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="js/syntaxhighlighter/styles/shCore.css">
+	<link rel="stylesheet" href="js/syntaxhighlighter/styles/shThemeDefault.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Icon Font -->
+	<link href="font/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Font -->
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500,300' rel='stylesheet' type='text/css'>
+	<!-- Google Font -->
+</head>
+
+<body>
+	<header class="navbar navbar-fixed-top page-header">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+				<div class="logo">
+					<a href="#"><img src="images/logo.png" alt=""></a>
+				</div>
+				<div class="header-link">
+					<div class="time"><span class="fa fa-clock-o"></span> Monday to Friday-8:00 am - 5:00 pm</div>
+					<div><span class="fa fa-ticket"></span> <a href="#">ticket systems</a></div>
+					<div class="list-social">
+						<!--<a href="#"><i class="fa fa-facebook icon-circled"></i></a>--><a href="https://twitter.com/BigStepsCompany" target=_blank><i class="fa fa-twitter icon-circled"></i></a></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid">
+		<div class="row">
+			<!-- Sidebar -->
+			<div class="col-left">
+				<nav class="collapse navbar-collapse" role="navigation">
+					<ul class="nav sidebar-nav affix" id="sidebar">
+						<li class="collapsed opened"> <a href="#GettingStarted" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Getting Started </a> <span class="toggle">+</span>
+							<ul class="submenu" style="display: none;">
+								<li><a href="#Installation" class="">Installation</a></li>
+								<li><a href="#HTMLStructure" class="">HTML Structure</a></li>
+								<li><a href="#ColorSchemes" class="">Color Schemes</a></li>
+								<li><a href="#ChangingFonts" class="">Changing Fonts</a></li>
+								<li><a href="#Icons" class="">Icons Font</a></li>
+								<li><a href="#Grid" class="">Grid</a></li>
+							</ul>
+						</li>
+						<li class="collapsed"> <a href="#Headers" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Header</a><span class="toggle">+</span>
+							<ul class="submenu" style="display: none;">
+								<li><a href="#HeaderTypes" class="">Header Types</a></li>
+								<li><a href="#StickyHeader" class="">Sticky Header</a></li>
+								<li><a href="#MegaMenu" class="">Mega Menu</a></li>
+								<li><a href="#MobileMenu" class="">Mobile Menu</a></li>
+							</ul>
+						</li>
+						<li class="collapsed"> <a href="#Product" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Product</a><span class="toggle">+</span>
+							<ul class="submenu" style="display: none;">
+								<li><a href="#ProductTypes" class="">Product Types</a></li>
+								<li><a href="#CountDown" class="">CountDown</a></li>
+								<li><a href="#QuickView" class="">Quick View</a></li>
+								<li><a href="#ProductCarousel" class="">Product Carousel</a></li>
+								<li><a href="#ProductIsotope" class="">Product Isotope Filter</a></li>
+							</ul>
+						</li>
+						<li class="collapsed"> <a href="#Footer" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Footer</a><span class="toggle">+</span>
+							<ul class="submenu" style="display: none;">
+								<li><a href="#FooterTypes" class="">Footer Types</a></li>
+							</ul>
+						</li>
+						<li class="collapsed"> <a href="#Slider" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Slider</a></li>
+<!--						<li class="collapsed"> <a href="#Listing" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Listing & Filters</a></li>-->
+<!--						<li class="collapsed"> <a href="#MiniCarts" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Mini Carts</a></li>-->
+<!--
+						<li class="collapsed"> <a href="#Blog" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Blog</a></li>
+						<li class="collapsed"> <a href="#Gallery" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Gallery</a></li>
+						<li class="collapsed"> <a href="#Contact" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Contact Page</a></li>
+-->
+						<li class="collapsed"> <a href="#ContentItems" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Other Content</a><span class="toggle">+</span>
+							<ul class="submenu" style="display: none;">
+								<li><a href="#Typography" class="">Typography</a></li>								
+								<li><a href="#Brands" class="">Brands</a></li>
+<!--
+								<li><a href="#" class="">Our Team</a></li>
+								<li><a href="#" class="">Testimonials</a></li>
+								<li><a href="#" class="">Tabs</a></li>
+								<li><a href="#" class="">Promo Boxes</a></li>
+								<li><a href="#" class="">Instargam</a></li>
+								<li><a href="#" class="">Google Map</a></li>
+-->
+							</ul>
+						</li>
+						<li class="collapsed"> <a href="#Credits" class="auto-open"><i class="fa fa-fw  fa-angle-right"></i>Credits</a><span class="toggle">+</span>
+							<ul class="submenu" style="display: none;">
+								<li><a href="#jQuery" class="">jQuery</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- /#sidebar-wrapper -->
+			<!-- Page Content -->
+			<div class="col-center">
+				<div id="page-content-wrapper">
+					<div class="content">
+						<section id="GettingStarted">
+							<br>
+							<h1> Welcome to Bigsteps!</h1>
+							<blockquote>
+								<p> We would like to thank you for purchasing <strong>Seiko eCommerce HTML5 Template</strong>!
+									<br> Before you get started, please be sure to always check out this documentation. </p>
+								<p> If You have any questions that are beyond the scope of this documentation, please feel free to submit ticket to <a href="http://big-skins.com/support" target="_blank">http://big-skins.com/support</a></p>
+								<p> We're very happy to help you and you will get reply from us more faster than you expected.
+									<br> Thank you, we hope you to enjoy using Seiko eCommerce HTML5 Template!</p>
+							</blockquote>
+						</section>
+						<section id="Installation">
+							<h2 class="dark">Getting Started</h2>
+							<h2>Installation</h2>
+							<p>Follow the steps below to get started with your site template:</p>
+							<ol>
+								<li>Open the html folder to find all the Templates Files</li>
+								<li>You will need to <strong>upload</strong> these files to your <strong>web server</strong> using FTP.</li>
+								<li>Make sure you upload the required files/folders listed below:
+									<ul>
+										<li>html/css - stylesheets folder</li>
+										<li>html/images - images folder</li>
+										<li>html/js - javacripts folder</li>
+										<li>html/fonts - fonts folder</li>
+										<li>html/index.html - index file/homepage</li>
+									</ul> Other files can be used according to your preferences.</li>
+								<li>Now you can start adding your content.</li>
+							</ol>
+						</section>
+						<section id="HTMLStructure">
+							<h2>HTML Structure</h2>
+							<p>Seiko Template follows a simple HTML code structure for every page. Here is the sample:</p> <pre class="brush: xml, toolbar: false">
+<hеad>
+	<!--Your Stylesheets & Title -->
+	<bоdy>
+		<div class="fixed-btns">
+			...
+		</div>
+		<div id="wrapper">
+			<!-- ProductStack -->
+			<div class="productStack">
+				...
+			</div>
+			<!-- /ProductStack -->
+			<!-- Sidebar -->
+			<div class="sidebar-wrapper">
+				...
+			</div>
+			<!-- /Sidebar -->
+			<!-- Page -->
+			<div class="page-wrapper">
+				<!-- Header -->
+				<header class="page-header fullboxed variant-9 sticky always">
+					...
+				</header>
+				<!-- /Header -->
+				<!-- Page Content -->
+				<main class="page-main">
+					<div class="block">
+						<div class="container">
+							...
+						</div>
+					</div>
+					...
+					<div class="block">
+						<div class="container">
+							...
+						</div>
+					</div>
+				</main>
+				<!-- /Page Content -->
+				<!-- Footer -->
+				<footer class="page-footer">
+					<div class="container">
+						...
+					</div>
+				</footer>
+				<!-- /Footer -->
+			</div>
+			<!-- /Page -->
+		</div>
+		<!--Your Scripts -->
+	</bоdy>
+</pre>
+							<p>Seiko Template supports boxed & fullwidth layouts. Adding the class <code>.boxed</code> or <code>.fullwidth</code> to the <code>body</code> will make your site boxed or fullwidth.</p>
+							<p>Without reference to body layout you can make <code>header</code>, <code>footer</code> and each <code>.block</code> boxed, fullwidth or fullboxed by adding <code>.boxed</code>, <code>.fullwidth</code> or <code>.fullboxed</code> class.
+								<br>See the image below:</p>
+							<p class="text-center"><img src="images/screen/layout.png" class="img-responsive" alt=""></p>
+						</section>
+						<section id="ColorSchemes">
+							<h2>Color Schemes</h2>
+							<p>You can change your website's color scheme simply by changing the HEX color code in the css/style-color.css file. Make sure you add the style-color.css stylesheet in your head after the style.css stylesheets. If you use less, you can compile new style.css after changing colors variables in theme-variables.less</p> <pre class="brush: xml, toolbar: false">
+								<!-- Color Schemes -->
+								<link href="css/style-color.css" rel="stylesheet"></pre> </section>
+						<section id="ChangingFonts">
+							<h2>Changing Fonts</h2> Seiko Theme uses three external fonts: Raleway, Roboto & Oswald from the Google Fonts Library by default.
+							<br> You can find the link to the font files in the head tag of the HTML files. <pre class="brush: xml, toolbar: false">
+<link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,400,400italic,500,500italic,700,700italic" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet" type="text/css" />
+            </pre> If you want to change the Google Font, you will need to edit the above links with your own font. If you want to use self hosted font, remove these links completely. </section>
+						<section id="Icons">
+							<h2>Icons Font</h2>
+							<p>Seiko Theme uses simply and flexible icon library <b>IcoMoon</b>.</p>
+							<p>IcoMoon is striving to build and provide the best iconography and icon management tool for perfectionists.</p>
+							<p>If you want to add new icon to the library follow instruction, provided below:</p>
+							<p>1. Go to
+								<a href="https://icomoon.io/app/#/select"></a>. <b>Import</b> <b>font/icomoon-reg/selection.json</b>. Select 'Yes' in modal window:</p>
+							<br> <img src="images/screen/icon-0.jpg" alt="" class="img-responsive">
+							<br>
+							<p><b>All Seiko icons will be imported!</b></p>
+							<br> <img src="images/screen/icon-1.jpg" alt="" class="img-responsive">
+							<br>
+							<p>2. Then <b>select</b> new icon(s)</p>
+							<br> <img src="images/screen/icon-2.jpg" alt="" class="img-responsive">
+							<br>
+							<p>3. <b>Generate</b> your custom font</p>
+							<br> <img src="images/screen/icon-3.jpg" alt="" class="img-responsive">
+							<br>
+							<p>4. <b>Download</b> new Icons Set, unzip archive and copy all files to 'font/icomoon-reg/' folder of your project</p>
+							<br>
+							<p>5. Find new icon in <code>demo.html</code> and use it in your <b>html code</b></p>
+							<p>For example like this:</p> <pre class="brush: xml, toolbar: false">
+							<i class="icon icon-drink"></i>
+							<i class="icon icon-coffee"></i>
+							<i class="icon icon-mug"></i></pre> <img src="images/screen/icon-4.jpg" alt="" class="img-responsive"> </section>
+						<section id="Grid">
+							<h2>Grid</h2>
+							<p> Seiko Theme uses Bootstrap Grid. </p>
+							<p>For more details on the Bootstrap Grid, please visit its official <a href="http://getbootstrap.com/" target="_blank">website</a>. </p>
+							<div class="bootstrap-grid">
+								<div class="row">
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-1">.col-md-1</div>
+								</div>
+								<div class="row">
+									<div class="col-md-2">.col-md-2</div>
+									<div class="col-md-2">.col-md-2</div>
+									<div class="col-md-2">.col-md-2</div>
+									<div class="col-md-2">.col-md-2</div>
+									<div class="col-md-2">.col-md-2</div>
+									<div class="col-md-2">.col-md-2</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">.col-md-3</div>
+									<div class="col-md-3">.col-md-3</div>
+									<div class="col-md-3">.col-md-3</div>
+									<div class="col-md-3">.col-md-3</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">.col-md-4</div>
+									<div class="col-md-4">.col-md-4</div>
+									<div class="col-md-4">.col-md-4</div>
+								</div>
+								<div class="row">
+									<div class="col-md-5">.col-md-5</div>
+									<div class="col-md-5">.col-md-5</div>
+									<div class="col-md-2">.col-md-2</div>
+								</div>
+								<div class="row">
+									<div class="col-md-6">.col-md-6</div>
+									<div class="col-md-6">.col-md-6</div>
+								</div>
+								<div class="row">
+									<div class="col-md-1">.col-md-1</div>
+									<div class="col-md-11">.col-md-11</div>
+								</div>
+								<div class="row">
+									<div class="col-md-2">.col-md-2</div>
+									<div class="col-md-10">.col-md-10</div>
+								</div>
+								<div class="row">
+									<div class="col-md-3">.col-md-3</div>
+									<div class="col-md-9">.col-md-9</div>
+								</div>
+								<div class="row">
+									<div class="col-md-4">.col-md-4</div>
+									<div class="col-md-8">.col-md-8</div>
+								</div>
+								<div class="row">
+									<div class="col-md-5">.col-md-5</div>
+									<div class="col-md-7">.col-md-7</div>
+								</div>
+							</div>
+						</section>
+						<h2 class="dark" id="Headers">Headers</h2>
+						<section id="HeaderTypes">
+							<h2>HeaderTypes</h2>
+							<p>You can choose between <strong>9 types of headers</strong> while creating your pages. The list of header type & its descriptions are provided below
+								<br>
+								<br> </p>
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="col">Header Variant</th>
+										<th scope="col">Style class</th>
+										<th scope="col">Description</th>
+										<th scope="col">Image</th>
+										<th scope="col">Code</th>
+									</tr>
+									<tr>
+										<td><strong>Variant 1</strong></td>
+										<td><code>.variant-1</code></td>
+										<td>One row light, top margin</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-1.png" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-1.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 2</strong></td>
+										<td><code>.variant-2</code></td>
+										<td>One row light</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-2.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-2.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 3</strong></td>
+										<td><code>.variant-3</code></td>
+										<td>One row dark</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-3.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-3.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 4</strong></td>
+										<td><code>.variant-4</code></td>
+										<td>Three rows
+											<br> phones block, addresses block, promo block</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-4.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-4.html" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 5</strong></td>
+										<td><code>.variant-5</code></td>
+										<td>
+											<p>Two rows
+												<br> center logo, address block</p>
+										</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-5.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-5.html" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 6</strong></td>
+										<td><code>.variant-6</code></td>
+										<td>Two rows
+											<br> clear, left logo</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-6.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-6.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 7</strong></td>
+										<td><code>.variant-7</code></td>
+										<td>Three rows
+											<br> search, promo block, address block</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-7.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-7.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 8</strong></td>
+										<td>.variant-8</td>
+										<td>Three rows
+											<br> department menu, search, promo block, address block</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-8.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-8.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 9</strong></td>
+										<td>.variant-9</td>
+										<td>One row
+											<br> creative, collapsed links</td>
+										<td style="max-width:500px;"><img src="images/screen/header-v-9.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-variant-9.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section id="StickyHeader">
+							<h2>Sticky Header</h2>
+							<p> Use these classes with the headers making them sticky. Your can make sticky every headers variant.</p>
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="col">Style class</th>
+										<th scope="col">Description</th>
+										<th scope="col">Example</th>
+									</tr>
+									<tr>
+										<td valign='middle'>.sticky + .always</td>
+										<td> Always fixed header on scroll.
+											<br> <pre class="brush: xml, toolbar: false"> <header class="page-header variant-... sticky always"> </pre> </td>
+										<td valign='middle'><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-sticky-always.htm" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td valign='middle'>.sticky + .smart</td>
+										<td>Show fixed header only when scroll page to the top.
+											<br> <pre class="brush: xml, toolbar: false"> <header class="page-header variant-... sticky smart"> </pre> </td>
+										<td valign='middle'><a href="http://frontend.big-skins.com/seiko/html/shortcode-header-sticky-smart.htm" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+								</tbody>
+							</table>
+							<br> </section>
+						<section id="MegaMenu">
+							<h2>MegaMenu</h2>
+							<p>We provides a very usefull way to customize your menu.</p>
+							<p>Each menu item can be displayed in three different variants: no dropdown link, simple dropdown and megamenu link.</p>
+							<p>Here is the basic megamenu structure:</p> <pre class="brush: xml, toolbar: false">
+								<div class="megamenu">
+									<ul class="nav">
+										<li class="active"><a href="#">Active Menu Link</a></li>
+										<li><a href="#">Simple Menu Link</a></li>
+										<li class="simple-dropdown"><a href="#">Simple DropDown Menu Link</a>...</li>
+										<li class="megamenu-dropdown"><a href="#">MegaMenu Link</a>...</li>
+									</ul>
+								</div>
+							</pre>
+							<br>
+							<h4>Simple DropDown Link</h4>
+							<p>Here is the Simple DropDown Link code example:</p> <pre class="brush: xml, toolbar: false">
+						<li class="simple-dropdown">
+							<a href="index.html">Simple DropDown Menu Link</a>
+							<div class="sub-menu">
+								<ul class="category-links">
+									<li><a href="#" title="">Level 2</a>
+										<ul>
+											<li><a href="#" title="">Level 3</a></li>
+											<li><a href="#" title="">Level 3</a>
+												<ul>
+													<li><a href="#" title="">Level 4</a></li>
+													<li><a href="#" title="">Level 4</a></li>
+													...
+												</ul>																				
+											</li>
+											...
+										</ul>
+									</li>
+									<li><a href="#" title="">Level 2-2</a></li>
+									...
+								</ul>
+							</div>
+						</li>
+						</pre>
+							<p>You can use unlimited levels of submenus.</p>
+							<br>
+							<h4>MegaMenu DropDown Link</h4>
+							<p>You can use the megaMenu in 2,3,4 & 5 Columns. Also you can add Left and(or) Right custom block to the megaMenu. MegaMenu grids and codes are provided below:</p>
+							<br>
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="col">Description</th>
+										<th scope="col">MegaMenu Grid</th>
+										<th scope="col">Code Example</th>
+									</tr>
+									<tr>
+										<td style="vertical-align: top;">
+											<h5>Only categories columms</h5> </td>
+										<td style="vertical-align: top; min-width: 400px;">
+											<h5>Categories</h5> <code>.column-5, .column-4, .column-3, .column-2, .column-1</code>
+											<h5>5 column <code>.column-5</code></h5> <img src="../doc/images/screen/mm-1.png" class="img-responsive" alt="">
+											<br>
+											<h5>2 column <code>.column-2</code></h5> <img src="../doc/images/screen/mm-4.png" class="img-responsive" alt=""> </td>
+										<td style="vertical-align: top;"><pre class="brush: xml, toolbar: false">		
+											<li class="mega-dropdown">
+												<a href="#">Link</a>
+												<div class="sub-menu">
+													<div class="container">
+														<div class="megamenu-categories column-5">
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+														</div>
+													</div>
+												</div>
+											</li>
+											</pre> </td>
+									</tr>
+									<tr>
+										<td style="vertical-align: top;">
+											<h5>Left Block + Categories</h5> </td>
+										<td style="vertical-align: top;">
+											<h5>Left Block</h5> <code>.width-20, .width-25, .width-33, .width-40</code>
+											<h5>Categories</h5> <code>.column-5, .column-4, .column-3, .column-2, .column-1</code> <img src="../doc/images/screen/mm-5.png" class="img-responsive" alt=""> </td>
+										<td style="vertical-align: top;"> <pre class="brush: xml, toolbar: false">		
+											<li class="mega-dropdown">
+												<a href="#">Link</a>
+												<div class="sub-menu">
+													<div class="container">
+														<div class="megamenu-left width-25">
+															...
+														</div>													
+														<div class="megamenu-categories column-3">
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+														</div>
+													</div>
+												</div>
+											</li>
+											</pre> </td>
+									</tr>
+									<tr>
+										<td style="vertical-align: top;">
+											<h5>Right Block + Categories</h5> </td>
+										<td style="vertical-align: top;">
+											<h5>Right Block</h5> <code>.width-20, .width-25, .width-33, .width-40</code>
+											<h5>Categories<h5> <code>.column-5, .column-4, .column-3, .column-2, .column-1</code>
+										<img src="../doc/images/screen/mm-6.png" class="img-responsive" alt="">	
+										</td>									
+										<td style="vertical-align: top;">
+										<pre class="brush: xml, toolbar: false">		
+											<li class="mega-dropdown">
+												<a href="#">Link</a>
+												<div class="sub-menu">
+													<div class="container">
+														<div class="megamenu-right width-25">
+															...
+														</div>													
+														<div class="megamenu-categories column-3">
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+														</div>
+													</div>
+												</div>
+											</li>
+											</pre>
+										</td>
+									</tr>							
+									<tr>
+										<td style="vertical-align: top;">
+										<h5>Left Block + Right Block + Categories</h5> </td>
+										<td style="vertical-align: top;">
+											<h5>Left Block</h5> <code>.width-20, .width-25, .width-33, .width-40</code>
+											<h5>Right Block</h5> <code>.width-20, .width-25, .width-33, .width-40</code>
+											<h5>Categories<h5> <code>.column-5, .column-4, .column-3, .column-2, .column-1</code>
+										<img src="../doc/images/screen/mm-7.png" class="img-responsive" alt="">	
+										</td>									
+										<td style="vertical-align: top;">
+										<pre class="brush: xml, toolbar: false">		
+											<li class="mega-dropdown">
+												<a href="#">Link</a>
+												<div class="sub-menu">
+													<div class="container">
+														<div class="megamenu-left width-25">
+															...
+														</div>															
+														<div class="megamenu-right width-25">
+															...
+														</div>													
+														<div class="megamenu-categories column-2">
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+															<!-- megamenu column -->
+															<div class="col">
+																...
+															</div>
+															<!-- /megamenu column -->
+														</div>
+													</div>
+												</div>
+											</li>
+											</pre>
+										</td>
+									</tr>
+									
+							</table>
+								</tbody>
+						</section>
+						<section id="MobileMenu">
+							<h2>Mobile Menu</h2>
+							Mobile Menu is visible only when  window is smaller than 992px. Its srtucture is provided below.
+							<br><br>
+							<div class="row">
+								<div class="col-sm-6"><img src="images/screen/mobile-menu.jpg" class="img-responsive" alt=""></div><div class="col-sm-6">
+								<pre class="brush: xml, toolbar: false">
+								<div class="mobilemenu">
+								<div class="mobilemenu-header">
+									<div class="title">MENU</div>
+									<a href="#" class="mobilemenu-toggle"></a>
+								</div>
+								<div class="mobilemenu-content">
+									<ul class="nav">
+										<li><a href="#">Level 1</a><span class="arrow"></span>
+											<ul>
+											<li><a href="#" title="">Level 2</a>
+												<ul>
+													<li><a href="#" title="">Level 3</a></li>
+													<li><a href="#" title="">Level 3</a>
+														<ul>
+															<li><a href="#" title="">Level 4</a></li>
+															<li><a href="#" title="">Level 4</a></li>
+															...
+														</ul>																				
+													</li>
+													...
+												</ul>
+											</li>
+											</ul>
+										</li>
+										<li><a href="#">Level 2</a></li>
+									</ul>
+								</div>
+							</div>
+							</pre>
+							</div>
+							</div>
+
+							<h4>Mobile Menu Helper Classes</h4>
+						
+							<p>Use these classes with <code>.mobilemenu</code></p>
+							<br>
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="col">Style class</th>
+										<th scope="col">Description</th>
+									</tr>
+									<tr>
+										<td valign='middle'><code>.dblclick</code></td>
+										<td> First click on link will open submenu, second click  will go to the URL specified for that link
+										<br> <pre class="brush: xml, toolbar: false"><div class="mobilemenu dblclick">  ... </pre> </td>
+									</tr>
+								</tbody>
+							</table>		
+
+							
+							</section>
+            			<h2 class="dark" id="Product">Product</h2>
+						<section id="ProductTypes">
+							<h2>Product Types</h2>
+							<p>You can choose between <strong>5 types of product previews</strong> while creating your pages. 
+							 Products type 1, and 3 has the same HTML structure. Its enough to change wrapper class to get the new preview type. Products type 5 and 6 has different html code structute, you need change class and HTML code to get these previews types.</p>							 
+							 <br>
+							 <p>Product preview HTML code must be placed inside wrapper div <code>.products-grid</code> or <code>.products-listview</code></p>
+							 <pre class="brush: xml, toolbar: false">
+								<div class="products-grid">
+								<!-- Product Item -->
+								<div class="product-item large">
+									...
+								</div>
+								<!-- /Product Item -->
+								</div>
+							</pre>
+							<br>
+							<p>All previews type contains such items as: big image photo, inside slider or small thumbnails for more photos view, product name block, description block, price block, rating block, labels (new/sale), sharing link, action button, quick view link, wishlist link, not available block.</p>
+							 <p>
+							 The list of product types & its descriptions are provided below:
+								 </p><br>
+								<br>
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="col">Product Types</th>
+										<th scope="col">Style class</th>
+										<th scope="col">Description</th>
+										<th scope="col">Image</th>
+										<th scope="col">Code</th>
+									</tr>
+									<tr>
+										<td><strong>Variant 1</strong></td>
+										<td><code>.product-variant-1</code></td>
+										<td>Left Photo / Right Info<br>
+										Inside slider</td>
+										<td style="max-width:300px;"><img src="images/screen/pr-1.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-product-1.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>									
+									<tr>
+										<td><strong>Variant 2</strong></td>
+										<td><code>.product-variant-2</code></td>
+										<td>Left Photo / Right Info<br>
+										Inside slider<br>
+										Recomended use only in products carousel</td>
+										</td>
+										<td style="max-width:300px;"><img src="images/screen/pr-2.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-product-2.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>									
+									<tr>
+										<td><strong>Variant 3</strong></td>
+										<td><code>.product-variant-3</code></td>
+										<td>Top Photo / Bottom Info<br>
+										Inside slider</td>
+										<td style="max-width:300px;"><img src="images/screen/pr-3.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-product-3.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>									
+									<tr>
+										<td><strong>Variant 4</strong></td>
+										<td><code>.product-variant-4</code></td>
+										<td>Top Photo / Bottom Info<br>
+										Zoom on Hover<br>
+										Small previews</td>
+										<td style="max-width:300px;"><img src="images/screen/pr-4.gif" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-product-4.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>									
+									<tr>
+										<td><strong>Variant 5</strong></td>
+										<td><code>.product-variant-5</code></td>
+										<td>Top Photo / Bottom Info<br>
+										Collapsed info<br>
+										Inside slider</td>
+										<td style="max-width:300px;"><img src="images/screen/pr-5.gif" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-product-5.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</section>					
+						<section id="CountDown">
+							<h2>CountDown</h2>
+							<p>You can put a countdown in the product preview or in the product pages of your shop and use it to highlight certain offers or deals.</p>
+							<p>There are two ways to set the final countdown date. Please see them below:</p>
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="col">Description</th>
+										<th scope="col">Code</th>
+									</tr>									
+									<tr>
+										<td>Set attribute <code>data-promodate</code>. In this case countdown date will end at set date.</td>
+										<td>
+										<pre class="brush: xml, toolbar: false"> 
+											<div class="countdown-box hidden-xs">
+												<div class="countdown-wrapper">
+													<div class="countdown-title">special price expires in</div>
+													<div class="countdown" data-promodate="2016/12/31"></div>
+												</div>
+											</div>
+										</pre>
+										</td>
+									</tr>									
+									<tr>
+										<td>Set attribute <code>data-promoperiod</code>. In this case countdown date will never end and calculates as current date add attribute value in seconds. For example, data-promoperiod="100000000" will set promo period as 1d 03h 46m 40s.</td>
+										<td>
+										<pre class="brush: xml, toolbar: false"> 
+											<div class="countdown-box hidden-xs">
+												<div class="countdown-wrapper">
+													<div class="countdown-title">special price expires in</div>
+													<div class="countdown" data-promoperiod="100000000"></div>
+												</div>
+											</div>
+										</pre>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+								<p>For more details on the countdown plugin, please visit its dedicated  <a href="http://hilios.github.io/jQuery.countdown/documentation.html" target="_blank">website</a>. </p>
+							
+						</section>						
+						<section id="QuickView">
+							<h2>Quick View</h2>
+							<p>Quick View adds the possibility to have a quick preview of the products right from product list. Quick View content is placed in quick-view.html and loads into modal window via ajax. So this feature will work only on server side, not locally.</p>
+							<br>
+							<div class="row">
+							<div class="col-sm-8">	
+							<p>For use QuickView add  URL to <code>a.quick-view-link</code> and place modal window code at the end of the page:</p>
+							<pre class="brush: xml, toolbar: false">
+							<a href="quick-view.html" title="Quick View" class="quick-view-link">Quick View</a>
+							</pre>
+							<pre class="brush: xml, toolbar: false">
+								<!-- Modal Quick View -->
+								<div class="modal quick-view zoom" id="quickView">
+									<div class="modal-dialog">
+										<div class="modalLoader-wrapper">
+											<div class="modalLoader bg-striped"></div>
+										</div>
+										<div class="modal-header">
+											<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												&#10006;
+											</button>
+										</div>
+										<div class="modal-content">
+											<iframe></iframe>
+										</div>
+									</div>
+								</div>
+								<!-- /Modal Quick View --></pre>
+							</div><div class="col-sm-4"><img src="images/screen/qview.jpg" class="img-responsive" alt="" ></div>
+							</div>
+						</section>
+						<section id="ProductCarousel">
+							<h2>Product Carousel</h2>							
+							<p>You can display product previews as carousel. For use carousel add class <code>.products-carousel</code>
+							to product previews wrapper:</p>
+							<pre class="brush: xml, toolbar: false">
+							<div class="products-grid demo-carousel products-carousel"> ... </div></pre>
+							<p>Then initialize carousel with your parameters:</p>
+							<pre class="brush: js, toolbar: false">
+								<script>
+									// demo carousel
+									if ($(".demo-carousel.products-carousel").length) {
+										var $this = $(".demo-carousel.products-carousel"),
+											arrowsplace = $this.prev('.title');
+											$this.slick({
+												rows: 1,
+												appendArrows: arrowsplace,
+												slidesToShow: 4,
+												slidesToScroll: 4,
+												speed: 500
+										});
+									}
+								</script></pre>
+							<p>For more details on the carousel plugin, please visit its dedicated  <a href="http://kenwheeler.github.io/slick/" target="_blank">website</a>. </p>
+						</section>						
+						<section id="ProductIsotope">
+							<h2>Products Isotope Filter</h2>							
+							<p>You can display product previews as masonry grid with category filters. Add filters HTML code before products grid:</p>
+							<pre class="brush: xml, toolbar: false">
+							<ul class="filters filters-product">
+								<li><a href="#" class="filter-label">All<span class="count"></span></a></li>
+								<li><a href="#" class="filter-label" data-filter=".category1">Category1<span class="count"></span></a></li>
+								<li><a href="#" class="filter-label" data-filter=".category2">Category2<span class="count"></span></a></li>
+							</ul></pre>
+							<p>To make category selected on page load, add class to it <code>.active</code>. For example, this code will select all products from category "New" at start.</p>
+							<pre class="brush: xml, toolbar: false"><li><a href="#" class="filter-label active" data-filter=".category1">New<span class="count"></span></a></li></pre>
+						</section>	
+						
+																		<h2 class="dark" id="Footer">Footer</h2>
+						<section id="FooterTypes">
+							<h2>Footer Types</h2>
+							<p>You can choose between <strong>4 types of footers</strong> while creating your pages. The list of footer type & its descriptions are provided below
+								<br>
+								<br> </p>
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="col">Footer Variant</th>
+										<th scope="col">Style class</th>
+										<th scope="col">Description</th>
+										<th scope="col">Image</th>
+										<th scope="col">Code</th>
+									</tr>
+									<tr>
+										<td><strong>Variant 1</strong></td>
+										<td><code>.variant1</code></td>
+										<td style="width:200px;">One row<br>
+										promo block, copyright block</td>
+										<td style="max-width:500px;"><img src="images/screen/f-1.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-footer-variant-1.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 2</strong></td>
+										<td><code>.variant2</code></td>
+										<td>Three rows
+											<br> newsletter block, footer links block, contact block, promo block, copyright block</td>
+										<td style="max-width:500px;"><img src="images/screen/f-2.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-footer-variant-2.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 3</strong></td>
+										<td><code>.variant3</code></td>
+										<td>One row<br>footer menu block, copyright block</td>
+										<td style="max-width:500px;"><img src="images/screen/f-3.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-footer-variant-3.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td><strong>Variant 4</strong></td>
+										<td><code>.variant4</code></td>
+										<td>Three rows
+											<br> newsletter block, news carousel, social widget, footer links block, contact block, promo block, copyright block</td>
+										<td style="max-width:500px;"><img src="images/screen/f-4.jpg" class="img-responsive" alt="" /></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-footer-variant-4.html" class="btn" target="_blank">ShortCode</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+									<section id="Slider">
+							<h1>Slider</h1>
+							<h4>Slider structure</h4>
+							<p>Seiko Theme uses Swiper Slide. Swiper - is the free and most modern mobile touch slider with hardware accelerated transitions and amazing native behavior. It is intended to be used in mobile websites, mobile web apps, and mobile native/hybrid apps. Designed mostly for iOS, but also works great on latest Android, Windows Phone 8 and modern Desktop browsers</p>
+							<p>You can find the Swiper Slider related Documentation <a href="http://idangero.us/swiper/" target="_blank">here</a>.</p>
+							<p>Here is the HTML code for the Swiper slider:</p>
+							
+							<pre class="brush: xml, toolbar: false">
+							<!-- Main Slider -->
+							<div class="mainSlider" data-thumb="true" data-thumb-width="230" data-thumb-height="100">
+								<!-- Slider main container -->
+								<div class="swiper-container">
+									<div class="swiper-wrapper">
+										<!-- Slide -->
+										<div class="swiper-slide" data-thumb="images/slider/slide-thumb.png" data-href="#" data-target="_blank">
+											...
+										</div>
+										<!-- Slide -->
+									</div>
+									<!-- pagination -->
+									<div class="swiper-pagination"></div>
+									<!-- pagination thumbs -->
+									<div class="swiper-pagination-thumbs">
+										<div class="thumbs-wrapper">
+											<div class="thumbs"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /Main Slider -->
+							</pre>
+							
+							<p>If you plan to set previews of each slide, please set  attribute <code>data-thumb="true"</code> to 
+							
+							and <code>data-thumb</code> to <code>.swiper-slide</code>. If parameter <code>data-thumb</code> for slide  is 
+not specified, the preview image will be the same as the main image.
+							   </p>
+							   
+							<p>If you want to make slider image as link, set parameter <code>data-href</code> to <code>.swiper-slide</code></p>
+							
+							<h4>Sliders animation</h4>
+<p>You can animate text, button or caption inside every slide via data parameters.</p>
+Text
+<pre class="brush: xml, toolbar: false">
+<div class="text animate" data parameters >Your Text</div></pre>
+Button (big and small)
+<pre class="brush: xml, toolbar: false">
+<a href="#" class="button animate"  data parameters > SHOP NOW</a>
+<a href="#" class="button button-sm animate" data parameters > SHOP NOW</a></pre>
+Caption with text
+<pre class="brush: xml, toolbar: false">
+<div class="caption animate" data parameters >                                               
+   <div class="text animate" data parameters >Your Text</div>
+   <div class="text animate" data parameters >Your Text</div>
+</div></pre>
+						<p>Slide text/caption data parameters are provided below:</p>
+							<table class="table table-bordered">
+							<tbody>
+									<tr>
+										<th scope="col" style="width: 20%">Parameter</th>
+										<th scope="col" style="width: 20%">Description</th>
+										<th scope="col" style="width: 40%">Recomended Value</th>
+										<th scope="col" style="width: 20%"Example</th>
+									</tr>
+									<tr>
+										<td>data-delay</td>
+										<td>Delay after previous text animation in ms</td>
+										<td>0 ... 10000</td>
+										<td><code>data-delay="0"</code></td>
+									</tr>
+									<tr>
+										<td>data-fontsize</td>
+										<td>Font size in relative value (vw)<br>1vw = 1% of viewport width</td>
+										<td>0 ... 30</td>
+										<td><code>data-fontsize="4"</code></td>
+									</tr>									
+									<tr>
+										<td>data-fontline</td>
+										<td>Line height in em (default is 1.2em)<br>
+											1em equal to fontsize value,<br>
+											2em equal to fontsize*2</td>
+										<td>0.8 ... 3</td>
+										<td><code>data-fontline="1.5"</code></td>
+									</tr>									
+									<tr>
+										<td>data-fontfamily</td>
+										<td>Font Family</td>
+										<td>-</td>
+										<td><code>data-fontfamily="Geneva"</code></td>
+									</tr>									
+									<tr>
+										<td>data-fontcolor</td>
+										<td>Font Color (default is white)</td>
+										<td>-</td>
+										<td><code>data-fontcolor="red"</code><br>OR<br><code>data-fontcolor="#ff0000"</code></td>
+									</tr>									
+									<tr>
+										<td>data-fontweight</td>
+										<td>Font weight</td>
+										<td>normal (400)<br>
+										bold (700)<br>
+										lighter<br>
+										bolder<br>
+										OR numeric value:<br>
+										100, 200, 300, 400, 500, 600, 700, 800, 900
+										</td>
+										<td><code>data-fontweight="bold"</code><br>
+										OR<br>
+										<code>data-fontweight="700"</code></td>
+									</tr>									
+									<tr>
+										<td>data-ypos</td>
+										<td>Y (vertical) position in %</td>
+										<td>0...100 <br>center</td>
+										<td><code>data-ypos="30"</code><br>
+OR<br>
+<code>data-ypos="center"</code></td>
+									</tr>									
+									<tr>
+										<td>data-xpos</td>
+										<td>X (vertical) position in %</td>
+										<td>0...100<br>
+center<br>
+left<br>
+right</td>
+										<td><code>data-xpos="20"</code><br>
+OR<br>
+<code>data-xpos="left"</code></td>
+									</tr>
+									<tr>
+										<td>data-animate</td>
+										<td>Text appear animation</td>
+<td>bounce, flash, pulse, rubberBand, shake, headShake, swing, tada, wobble, jello, bounceIn, bounceInDown, bounceInLeft, bounceInRight, bounceInUp, bounceOut, bounceOutDown, bounceOutLeft, bounceOutRight, bounceOutUp, fadeIn, fadeInDown, fadeInDownBig, fadeInLeft, fadeInLeftBig, fadeInRight, fadeInRightBig, fadeInUp, fadeInUpBig, fadeOut, fadeOutDown, fadeOutDownBig, fadeOutLeft, fadeOutLeftBig, fadeOutRight, fadeOutRightBig, fadeOutUp, fadeOutUpBig, flipInX, flipInY, flipOutX, flipOutY, lightSpeedIn, lightSpeedOut, rotateIn, rotateInDownLeft, rotateInDownRight, rotateInUpLeft, rotateInUpRight, rotateOut, rotateOutDownLeft, rotateOutDownRight, rotateOutUpLeft, rotateOutUpRight, hinge, rollIn, rollOut, zoomIn, zoomInDown, zoomInLeft, zoomInRight, zoomInUp, zoomOut, zoomOutDown, zoomOutLeft, zoomOutRight, zoomOutUp, slideInDown, slideInLeft, slideInRight, slideInUp, slideOutDown, slideOutLeft, slideOutRight, slideOutUp </td>
+										<td><code>data-animate="flipInY"</code>
+
+(all example <a href="https://daneden.github.io/animate.css/">here</a>)</td>
+										
+									</tr>									
+									<tr>
+										<td>data-otherstyle</td>
+										<td>Other inline styles</td>
+										<td>-</td>
+										<td><code>data-otherstyle="font-style: italic; padding:5px;"</code></td>
+									</tr>
+							</tbody>
+							</table>
+						
+							<h4>SEIKO demo sliders example</h4>
+							<table class="table table-bordered">
+							<tbody>
+									<tr>
+										<th scope="col">Image</th>
+										<th scope="col">Code</th>
+									</tr>
+									<tr>
+										<td><img src="images/screen/image03.png" alt=""></td>
+										<td>
+<pre class="brush: xml, toolbar: false">											
+<div class="swiper-slide" data-thumb="images/slider/slide-02-thumb.png" data-href="http://google.com" data-target="_blank">
+   <div class="wrapper">
+      <figure><img src="images/slider/slide-02.jpg" alt=""></figure>
+      <div class="text animate"
+         data-animate="flipInY"
+         data-delay="0"
+         data-fontsize="3.8"
+         data-fontline="0.71"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#f82e56"
+         data-fontweight="900"
+         data-ypos="29"
+         data-xpos="9"
+         data-otherstyle="">
+         Seikō
+      </div>
+      <div class="text animate"
+         data-animate="bounceIn"
+         data-delay="500"
+         data-fontsize="6"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#333745"
+         data-fontweight="900"
+         data-ypos="36"
+         data-xpos="6"
+         data-otherstyle="text-transform: uppercase;">
+         Season sale
+      </div>
+      <div class="text animate"
+         data-animate="bounceIn"
+         data-delay="1000"
+         data-fontsize="4"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#333745"
+         data-fontweight="100"
+         data-ypos="51.5"
+         data-xpos="13"
+         data-otherstyle="text-transform: uppercase;">
+         popular brands
+      </div>
+      <div class="text animate"
+         data-animate="rubberBand"
+         data-delay="1500"
+         data-fontsize="8"
+         data-fontfamily="Roboto,sans-serif"
+         data-fontcolor="#f82e56"
+         data-fontweight="900"
+         data-ypos="59"
+         data-xpos="25"
+         data-otherstyle="">  
+         70%
+      </div>
+      <div class="text animate"
+         data-animate="hinge"
+         data-delay="2000"
+         data-fontsize="7"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#f82e56"
+         data-fontweight="900"
+         data-ypos="62"
+         data-xpos="47"
+         data-otherstyle="">
+         OFF
+      </div>
+   </div>
+</div>
+</pre></td>
+								</tr>
+								<tr>
+										<td><img src="images/screen/image02.png" alt=""></td>
+										<td><pre class="brush: xml, toolbar: false"><div class="swiper-slide" data-thumb="images/slider/slide-03-thumb.png">
+   <div class="wrapper">
+      <figure><img src="images/slider/slide-03.jpg" alt=""></figure>
+      <div class="text animate"
+         data-animate="bounceInDown"
+         data-delay="0"                            
+         data-fontsize="4.6"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#fff"
+         data-fontweight="900"
+         data-xpos="7"
+         data-ypos="30">
+         Street
+      </div>
+      <div class="text animate"
+         data-animate="bounceInDown"
+         data-delay="500"                        
+         data-fontsize="4.6"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#fff"
+         data-fontweight="900"
+         data-xpos="25"
+         data-ypos="30">
+         Fashion
+      </div>
+      <div class="text animate"
+         data-animate="bounceInDown"
+         data-delay="1000"
+         data-fontsize="4.6"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#fff"
+         data-fontweight="900"
+         data-xpos="47"
+         data-ypos="30">
+         And
+      </div>
+      <div class="text animate"
+         data-animate="bounceIn"
+         data-delay="1500"
+         data-fontsize="4.6"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#fff"
+         data-fontweight="900"
+         data-xpos="7"
+         data-ypos="42">
+         Urban
+      </div>
+      <div class="text animate"
+         data-animate="bounceIn"
+         data-delay="2000"
+         data-fontsize="4.6"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#fff"
+         data-fontweight="900"
+         data-xpos="25"
+         data-ypos="42">
+         Subcultures
+      </div>
+      <a href="#" class="button animate"
+         data-animate="rubberBand"
+         data-delay="2500"                          
+         data-xpos="7"
+         data-ypos="63">
+      SHOP NOW </a>
+   </div>
+</div></pre></td>
+								</tr>
+								<tr>
+										<td><img src="images/screen/image04.png" alt=""></td>
+										<td><pre class="brush: xml, toolbar: false"><div class="swiper-slide" data-thumb="images/slider/slide-04-thumb.png">
+   <div class="wrapper">
+      <figure><img src="images/slider/slide-04.jpg" alt=""></figure>
+      <div class="text animate"
+         data-animate="bounceInLeft"
+         data-delay="0"
+         data-fontsize="4.1"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#f82e56"
+         data-fontweight="900"
+         data-xpos="14"
+         data-ypos="23">
+         Summer
+      </div>
+      <div class="text animate"
+         data-animate="bounceInDown"
+         data-delay="500"
+         data-fontsize="4.1"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#333745"
+         data-fontweight="100"
+         data-xpos="34"
+         data-ypos="23">
+         very soon
+      </div>
+      <div class="text animate"
+         data-animate="bounceInUp"
+         data-delay="1000"
+         data-fontsize="2"
+         data-fontfamily="Raleway,sans-serif"
+         data-fontcolor="#fff"
+         data-fontweight="500"
+         data-xpos="14"
+         data-ypos="38">
+         Things to buy a swimsuit at a discount
+      </div>
+      <a href="#" class="button button-sm animate"
+         data-animate="bounceInLeft"
+         data-delay="1500"                          
+         data-xpos="14"
+         data-ypos="50">
+      SHOP NOW</a>
+   </div>
+</div></pre></td>
+								</tr>
+								<tr>
+										<td><img src="images/screen/image01.png" alt=""></td>
+										<td><pre class="brush: xml, toolbar: false">	
+<div class="swiper-slide" data-thumb="images/slider/slide-01-thumb.png">
+   <div class="wrapper">
+      <figure><img src="images/slider/slide-01.jpg" alt=""></figure>
+      <div class="caption animate"
+         data-animate="fadeIn"
+         data-xpos="10"
+         data-ypos="center"
+         data-otherstyle="width:50%; margin-top:3%;">
+         <div class="text animate"
+            data-animate="flipInY"
+            data-delay="0"
+            data-fontsize="4.5"
+            data-fontline="0.71"
+            data-fontfamily="Raleway,sans-serif"
+            data-fontcolor="#f82e56"
+            data-fontweight="900"
+            data-xpos="left"
+            data-otherstyle="bottom: 100%; top: auto;">
+            Seikō
+         </div>
+         <div class="text animate"
+            data-animate="bounceInLeft"
+            data-delay="500"
+            data-fontsize="6"
+            data-fontfamily="Raleway,sans-serif"
+            data-fontcolor="#fff"
+            data-fontweight="100"
+            data-xpos="left"
+            data-otherstyle="position: relative;">  
+            <strong>New</strong> collection
+         </div>
+         <div class="text3 animate"
+            data-animate="bounceInLeft"
+            data-delay="1500"
+            data-fontsize="4"
+            data-fontfamily="Raleway,sans-serif"
+            data-fontcolor="#fff"
+            data-fontweight="100"
+            data-xpos="left"
+            data-otherstyle="position: relative;">  
+            WOMEN'S <strong>FASHION</strong>
+         </div>
+         <div class="text animate"
+            data-animate="fadeIn"
+            data-delay="2000"
+            data-otherstyle="left: auto; right: -15%; top: auto; bottom: -20%;">
+            <!-- coolbutton -->
+            <a href="#" class="svg-btn" style="-webkit-clip-path: url(#coolButton); clip-path: url(#coolButton);"> <span>MORE</span> </a>
+            <svg class="clip-svg">
+               <defs>
+                  <clipPath id="coolButton" clipPathUnits="objectBoundingBox">
+                     <polygon points="0 .18, .99 .15, .91 .85, .07 .8" />
+                  </clipPath>
+               </defs>
+            </svg>
+            <!-- // coolbutton -->
+         </div>
+      </div>
+   </div>
+</div>
+</pre></td>
+								</tr>
+								</tbody>
+							</table>
+							
+						</section>
+						<h2 class="dark" id="ContentItems">Content</h2>
+												
+						<section id="Typography">
+							<h2>Typography</h2>
+							<p>You can see all typography elements in this example <a href="http://frontend.big-skins.com/seiko/html/shortcode-typography.html" target="_blank">shortcode</a>.</p>
+						</section>							
+						<section id="Brands">
+							<h2>Brands</h2>
+							<p>You can choose between <strong>2 types of brands view</strong> while creating your pages. Its descriptions are provided below
+								<br>
+								<br> </p>
+							<table class="table table-bordered">
+								<tbody>
+									<tr>
+										<th scope="col">Description</th>
+										<th scope="col">Image</th>
+										<th scope="col">Code</th>
+									</tr>
+									<tr>
+										<td><h5>Brands carousel</h5></td>
+										<td><img src="images/screen/brand-1.jpg" alt="" class="img-responsive"></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-brand-carousel.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+									<tr>
+										<td>
+											<h5>Brands grid</h5></td>
+										<td><img src="images/screen/brand-2.jpg" alt="" class="img-responsive"></td>
+										<td><a href="http://frontend.big-skins.com/seiko/html/shortcode-brand-grid.html" target="_blank" class="btn">ShortCode</a></td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section id="Credits">
+							<h1>Credit</h1>
+							<p>Seiko Theme uses jQuery plugins and CSS library provided below:.</p>
+							<ul class="marked-list">
+								<li><a href="http://jquery.com/ " target="_blank">jQuery</a>- JavaScript Library</li>
+								<li><a href="http://getbootstrap.com/ " target="_blank">Bootstrap</a>- Bootstrap by Twitter</li>
+								<li><a href="http://idangero.us/swiper/ " target="_blank">Swiper Slider</a>- jQuery slider plugin</li>
+								<li><a href="http://kenwheeler.github.io " target="_blank">Slick</a>- jQuery carousel plugin</li>
+								<li><a href="http://isotope.metafizzy.co/ " target="_blank">Isotope</a>- jQuery plugin filter &amp; sort plugin</li>
+								<li><a href="http://imagesloaded.desandro.com/ " target="_blank">Images Loaded</a> - jQuery plugin for detect when images are loaded</li>
+								<li><a href="http://weblinc.github.io/jquery-parallax/ " target="_blank">Parallax jQuery plugin</a>- jQuery plugin for parallax effect</li>
+								<li><a href="http://hilios.github.io/jQuery.countdown/ " target="_blank">jQuery Countdown</a>- jQuery Countdown plugin</li>
+								<li><a href="http://dimsemenov.com/plugins/magnific-popup/ " target="_blank">Magnific Popup</a>- jQuery popup plugin</li>
+								<li><a href="http://elevateweb.co.uk/image-zoom " target="_blank">jQuery elevateZoom</a>- jQuery imagezoom plugin</li>
+								<li><a href="http://igorlino.github.io/elevatezoom-plus/ " target="_blank">jQuery ezPlus</a>- jQuery imagezoom plugin</li>
+								<li><a href="https://github.com/jzaefferer/jquery-validation" target="_blank"> jQuery Validation Plugin</a></li>
+								<li><a href="https://github.com/malsup/form#copyright-and-license" target="_blank">jQuery Form Plugin</a></li>
+								<li><a href="http://rubentd.com/darktooltip/" target="_blank">jQuery DarkTooltip</a></li>
+								<li><a href="http://instafeedjs.com/" target="_blank">jQuery Instagram Feed</a></li>
+								<li><a href="http://gianlucaguarini.com/Tocca.js/" target="_blank">jQuery Tocca</a>- plugin for detect Javascript events</li>
+								<li><a href="http://rubentd.com/darktooltip/" target="_blank">jQuery Bootstrap TabCollapse</a></li>
+								<li><a href="http://pixelcog.github.io/parallax.js/" target="_blank">jQuery Parallax plugin</a></li>
+								<li><a href="https://daneden.github.io/animate.css/" target="_blank">CSS Animation Library</a></li>
+							</ul>
+							<hr />
+							<p><b>Hope you will enjoy Seiko Theme!</b></p>
+							<p>Kind Regards,
+								<br> <strong>BigSteps</strong></p>
+						</section>
+					</div>
+				</div>
+			</div>
+			<!-- /#page-content-wrapper -->
+		</div>
+	</div>
+	<!-- /Page Content -->
+	<!-- Footer -->
+	<footer class="page-footer">
+		<div class="container-fluid">
+			<div class="logo">
+				<a href="#"><img src="images/logo.png" alt=""></a>
+			</div>
+			<div class="footer-link">
+				<div class="time"><span class="fa fa-clock-o"></span> Monday to Friday-8:00 am - 5:00 pm</div>
+				<div><span class="fa fa-ticket"></span> <a href="#">ticket systems</a></div>
+				<div class="list-social"><a href="https://twitter.com/BigStepsCompany" target=_blank><i class="fa fa-twitter icon-circled"></i></a></div>
+			</div>
+		</div>
+	</footer>
+	<!-- /Footer -->
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+	<script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+	<script src='http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js'></script>
+	<script src='js/index.js'></script>
+	<!-- jQuery Syntax Highlighter -->
+	<script type="text/javascript" src="js/syntaxhighlighter/scripts/shCore.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushCss.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushXml.js"></script>
+	<script type="text/javascript" src="js/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.all()
+	</script>
+</body>
+
+</html>

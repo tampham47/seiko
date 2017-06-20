@@ -1,0 +1,207 @@
+Index: css/style.css
+===================================================================
+--- css/style.css	(revision 1)
++++ css/style.css	(working copy)
+@@ -4,7 +4,7 @@
+ 	Theme Name: Seiko HTML5 eCommerce Template
+ 	Author: BigSteps
+ 	Author URI: http://themeforest.net/user/bigsteps
+-	Version: 1.1
++	Version: 1.2.0
+ 
+ -----------------------------------------------------------------------------------*/
+ /*----------------------------------------
+@@ -10060,6 +10060,11 @@
+ .product-info-block.creative .video-link-wrapper {
+   text-align: center;
+ }
++@media screen and (max-width: 1199px) {
++  .product-block .col-md-12 {
++    clear: both;
++  }
++}
+ /* 3.4.4 Product Stack
+ -----------------------------------------------------------------*/
+ .productStack {
+Index: js/app.js
+===================================================================
+--- js/app.js	(revision 1)
++++ js/app.js	(working copy)
+@@ -3,7 +3,7 @@
+ 	Theme Name: Seiko HTML5 eCommerce Template
+ 	Author: BigSteps
+ 	Author URI: http://themeforest.net/user/bigsteps
+-	Version: 1.1
++	Version: 1.2.0
+ 
+ -----------------------------------------------------------------------------------*/
+ 
+@@ -2248,8 +2248,68 @@
+ 	}
+ 
+ 
++	// instagram feed
+ 
++	function doStuff() {
++		if ($(".instagramm-feed-full").has('a').length) {
++			startInstagramCarousel();
++			clearInterval(timer);
++		}
++	}
+ 
++	function startInstagramCarousel() {
++		$(".instagramm-feed-full").find('a').each(function () {
++			$(this).attr('target', '_blank');
++		});
++		var $slider = $(".instagramm-feed-full").slick({
++			speed: 700,
++			slidesToShow: 10,
++			slidesToScroll: 2,
++			cssEase: 'linear',
++			responsive: [{
++				breakpoint: 993,
++				settings: {
++					slidesToShow: 6,
++					slidesToScroll: 2
++				}
++	}, {
++				breakpoint: 769,
++				settings: {
++					slidesToShow: 4,
++					slidesToScroll: 2
++				}
++	}, {
++				breakpoint: 481,
++				settings: {
++					slidesToShow: 2,
++					slidesToScroll: 2
++				}
++	}]
++		});
++		var scroll,
++			speed = 0;
++		var stop = function () {
++			clearInterval(scroll);
++		}
++		var rw = function () {
++			stop();
++			$slider.slick("slickPrev");
++			scroll = setInterval(function () {
++				$slider.slick("slickPrev");
++			}, speed);
++		};
++		var fw = function () {
++			stop();
++			$slider.slick("slickNext");
++			scroll = setInterval(function () {
++				$slider.slick("slickNext");
++			}, speed);
++		}
++		$("body").on("mouseenter", ".instagramm-feed-full .slick-next", fw)
++			.on("mouseenter", ".instagramm-feed-full .slick-prev", rw)
++			.on("mouseleave", ".instagramm-feed-full .slick-next, .instagramm-feed-full .slick-prev", stop);
++	}
++
+ 	if ($("#instafeed").length) {
+ 
+ 		var userFeed = new Instafeed({
+@@ -2264,68 +2324,10 @@
+ 
+ 		var timer = setInterval(doStuff, 100);
+ 
+-		function doStuff() {
+-			if ($(".instagramm-feed-full").has('a').length) {
+-				startInstagramCarousel();
+-				clearInterval(timer);
+-			}
+-		}
+-
+-
+-		function startInstagramCarousel() {
+-			$(".instagramm-feed-full").find('a').each(function () {
+-				$(this).attr('target', '_blank');
+-			});
+-			var $slider = $(".instagramm-feed-full").slick({
+-				speed: 700,
+-				slidesToShow: 10,
+-				slidesToScroll: 2,
+-				cssEase: 'linear',
+-				responsive: [{
+-					breakpoint: 993,
+-					settings: {
+-						slidesToShow: 6,
+-						slidesToScroll: 2
+-					}
+-                }, {
+-					breakpoint: 769,
+-					settings: {
+-						slidesToShow: 4,
+-						slidesToScroll: 2
+-					}
+-                }, {
+-					breakpoint: 481,
+-					settings: {
+-						slidesToShow: 2,
+-						slidesToScroll: 2
+-					}
+-                }]
+-			});
+-			var scroll,
+-				speed = 0;
+-			var stop = function () {
+-				clearInterval(scroll);
+-			}
+-			var rw = function () {
+-				stop();
+-				$slider.slick("slickPrev");
+-				scroll = setInterval(function () {
+-					$slider.slick("slickPrev");
+-				}, speed);
+-			};
+-			var fw = function () {
+-				stop();
+-				$slider.slick("slickNext");
+-				scroll = setInterval(function () {
+-					$slider.slick("slickNext");
+-				}, speed);
+-			}
+-			$("body").on("mouseenter", ".instagramm-feed-full .slick-next", fw)
+-				.on("mouseenter", ".instagramm-feed-full .slick-prev", rw)
+-				.on("mouseleave", ".instagramm-feed-full .slick-next, .instagramm-feed-full .slick-prev", stop);
+-		}
+ 	}
+-
++	// end instagram feed
++  
++  
+ 	// Tools Panel
+ 
+ 	if ($("#toolsPanel").length) {
+Index: less/components/product-page.less
+===================================================================
+--- less/components/product-page.less	(revision 1)
++++ less/components/product-page.less	(working copy)
+@@ -711,4 +711,9 @@
+ 	.video-link-wrapper {
+ 		text-align: center;
+ 	}
++}
++@media screen and (max-width: @screen-md-max) {
++  .product-block .col-md-12 {
++		clear: both;	
++  }
+ }
+\ No newline at end of file
+Index: less/style.less
+===================================================================
+--- less/style.less	(revision 1)
++++ less/style.less	(working copy)
+@@ -3,7 +3,7 @@
+ 	Theme Name: Seiko HTML5 eCommerce Template
+ 	Author: BigSteps
+ 	Author URI: http://themeforest.net/user/bigsteps
+-	Version: 1.1
++	Version: 1.2.0
+ 
+ -----------------------------------------------------------------------------------*/
+ 

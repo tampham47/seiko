@@ -7,7 +7,6 @@
     "cloudinary": "^1.2.4",
     "dotenv": "^1.1.0",
     "express-handlebars": "^1.1.0",
-    "express-restify-mongoose": "^4.0.2",
     "handlebars": "^2.0.0",
     "keystone": "next",
     "moment": "^2.10.6",
