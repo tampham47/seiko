@@ -351,6 +351,7 @@
         <div class="items-total">Items 1 to 15 of 28 total</div>
 
         <div class="products-grid four-in-row product-variant-5">
+        {{#each data}}
           <div class="product-item large">
             <div class="product-item-inside">
               <div class="product-item-info">
@@ -395,9 +396,9 @@
                   </div>
                 </div>
                 <div class="product-item-details">
-                  <div class="product-item-name"> <a title="Boyfriend Shorts Denim" href="product.html" class="product-item-link">Boyfriend Shorts Denim</a> </div>
+                  <div class="product-item-name"> <a title="Boyfriend Shorts Denim" href="product.html" class="product-item-link">{{title}}</a> </div>
                   <div class="product-item-description">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia nonkdni numquam eius modi tempora incidunt ut labore</div>
-                  <div class="price-box"> <span class="price-container"> <span class="price-wrapper"> <span class="price">$69.00</span></span>
+                  <div class="price-box"> <span class="price-container"> <span class="price-wrapper"> <span class="price">{{price}}</span></span>
                     </span>
                   </div>
                   <div class="product-item-rating"> <i class="icon icon-star-fill"></i><i class="icon icon-star-fill"></i><i class="icon icon-star-fill"></i><i class="icon icon-star-fill"></i><i class="icon icon-star-fill"></i></div>
@@ -406,6 +407,7 @@
               </div>
             </div>
           </div>
+        {{/each}}
         </div>
 
         <div class="filter-row">
