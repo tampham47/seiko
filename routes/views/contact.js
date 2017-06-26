@@ -1,4 +1,5 @@
 var keystone = require('keystone');
+var Enquiry = keystone.list('Enquiry').model;
 
 exports = module.exports = function(req, res) {
 
@@ -10,8 +11,14 @@ exports = module.exports = function(req, res) {
 	locals.section = 'contact';
 
   view.on('post', function(next) {
-    console.log('contact post', req.body);
-    next();
+    var data = req.body;
+    var record = new Enquiry(data);
+    console.log('contact post', data);
+
+    record.save(function(err, resp) {
+      console.log('save', err, resp);
+      next();
+    });
   });
 
 	// Render the view
