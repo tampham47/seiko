@@ -34,23 +34,23 @@ var routes = {
 // Setup Route Bindings
 exports = module.exports = function(app) {
 
-	// Views
-	app.get('/', routes.views.index);
-	app.get('/category', routes.views.category);
-	app.get('/product', routes.views.product);
-	app.get('/product/:id', routes.views.product);
-	app.all('/contact', routes.views.contact);
+  // Views
+  app.get('/', routes.views.index);
+  app.get('/category', routes.views.category);
+  app.get('/product', routes.views.product);
+  app.get('/product/:id', routes.views.product);
+  app.all('/contact', routes.views.contact);
 
-	app.get('/login', routes.views.login);
-	app.get('/register', routes.views.register);
+  app.get('/login', routes.views.login);
+  app.get('/register', routes.views.register);
+  app.get('/about', routes.views.about);
+  app.get('/404', routes.views['404']);
+  app.get('/search', routes.views.search);
+  app.get('/cart', routes.views.cart);
+  app.get('/coming-soon', routes.views['coming-soon']);
+  app.get('/faq', routes.views.faq);
+  app.get('/wishlist', routes.views.wishlist);
 
-
-	// app.get('/blog/:category?', routes.views.blog);
-	// app.get('/blog/post/:post', routes.views.post);
-	// app.get('/gallery', routes.views.gallery);
-	// app.all('/contact', routes.views.contact);
-
-	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
-	// app.get('/protected', middleware.requireUser, routes.views.protected);
-
+  // NOTE: To protect a route so that only admins can see it, use the requireUser middleware:
+  // app.get('/protected', middleware.requireUser, routes.views.protected);
 };
