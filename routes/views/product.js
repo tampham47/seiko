@@ -1,4 +1,9 @@
+/**
+ *
+ */
+
 var keystone = require('keystone');
+var Cart = keystone.list('Cart').model;
 
 exports = module.exports = function(req, res) {
 
@@ -19,6 +24,16 @@ exports = module.exports = function(req, res) {
     q.exec(function(err, respone) {
       console.log('data', respone);
       locals.data = respone;
+      next();
+    });
+  });
+
+  view.on('post', function(next) {
+    var data = req.body;
+    var cartRecord = new Cart(data);
+
+    cartRecord.save(function(err, r) {
+      console.log('Cart record', err, r);
       next();
     });
   });

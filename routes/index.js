@@ -25,6 +25,7 @@ var importRoutes = keystone.importer(__dirname);
 // Common Middleware
 keystone.pre('routes', middleware.initLocals);
 keystone.pre('render', middleware.flashMessages);
+// keystone.post('render', middleware.getCart);
 
 // Import Route Controllers
 var routes = {
@@ -34,11 +35,12 @@ var routes = {
 // Setup Route Bindings
 exports = module.exports = function(app) {
 
+  app.use('*', middleware.getCart);
+
   // Views
   app.get('/', routes.views.index);
   app.get('/category', routes.views.category);
-  app.get('/product', routes.views.product);
-  app.get('/product/:id', routes.views.product);
+  app.all('/product/:id', routes.views.product);
   app.all('/contact', routes.views.contact);
 
   app.get('/login', routes.views.login);
